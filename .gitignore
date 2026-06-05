@@ -1,0 +1,30 @@
+# ── Environment & secrets ─────────────────────────────────────────────────────
+.env
+*.env.local
+
+# ── Composer vendor ───────────────────────────────────────────────────────────
+/vendor/
+
+# ── User uploads (never commit real user data) ────────────────────────────────
+/storage/resumes/*
+/storage/avatars/*
+/storage/company-logos/*
+/storage/cover-letters/*
+/storage/documents/*
+/storage/logs/*
+
+# Keep the directories themselves
+!storage/resumes/.gitkeep
+!storage/avatars/.gitkeep
+!storage/company-logos/.gitkeep
+!storage/cover-letters/.gitkeep
+!storage/documents/.gitkeep
+!storage/logs/.gitkeep
+
+# ── OS / editor files ─────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo
